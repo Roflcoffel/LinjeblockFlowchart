@@ -1,0 +1,88 @@
+body {
+  font-size: large;
+}
+
+.small-text {
+  font-size: small;
+  font-weight: 500;
+}
+
+.big-text {
+  font-size: 2.0rem;
+  font-weight: 500;
+}
+
+.sparledning-space {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.sparledning-space-small {
+  margin-top: 40px;
+}
+
+.vl {
+  border-left: 2px solid black;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.vl-offset {
+  margin-left: -80px;
+}
+
+.vl-offset-2 {
+  margin-left: -80px;
+}
+
+.hl {
+  border-top: 2px solid black;
+  width: 200px;
+  margin-left: -80px;
+}
+
+#train {
+  position: absolute;
+  cursor: move;
+  z-index: 2;
+  width: 15%;
+  height: auto;
+  top: 40px
+}
+
+.point {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 125px;
+  background-color: red;
+}
+
+#siv {
+  left: 21.4%;
+}
+
+#sv-in {
+  left: 44.25%;
+}
+
+#sv-out {
+  left: 55.5%;
+}
+
+#siiv {
+  left: 78.35%;
+}
+
+.circle {
+  display: flex;
+  font-size: x-large;
+  justify-content: center; 
+  align-items: center;    
+  width: 30px;            
+  height: 30px;
+  border: 2px solid black;
+  color: black;      
+  border-radius: 50%;
+  text-align: center;
+}
