@@ -6,13 +6,11 @@
 
     <script src="lib/p5.min.js"></script>
     <script src="js/fcTxt.js"></script>
+    <script src="js/fcTitle.js"></script>
     <script src="js/LinjeVändning.js"></script>
     <script src="sketch.js"></script>
 </head>
 <body class="container">
-    <div class="columns sparledning-space-small">
-        <div class="column col-mx-auto"><img id="linje-img" class="img-responsive" src=""></img></div>
-    </div>
     <div class="columns sparledning-space">
         <div class="column col-mx-auto"></div>
         <div class="column col-mx-auto">
@@ -33,16 +31,12 @@
         <div class="column col-1"></div>
         <div class="column col-6">
             <h3>Normal Läge Relän</h3>
-            <ul>
-                <li>SIv = Iv</li>
-                <li>SIIv = IIv</li>
-            </ul>
             <p>
                 Alla relän i tabellen nedan som har
                 ett <u>understreck</u> är <b>normalt dragna</b>.
                 <hr>
-                Medans reläerna i flödesschemat till höger är
-                <b>dragna</b> relän ritade med ett <u>understreck</u>.
+                Driftplats A och B reläerna är med och vi har <b>ingen</b> ställd
+                tågväg ut, men riktningen är mot <u>driftplats B</u>.
             </p>
             <table class="table table-hover">
                 <thead>
@@ -57,37 +51,9 @@
         <div class="column col-3 big-text">
             <main></main>
         </div>
-        <div class="column col-mx-auto big-text">
-            <div class="circle">1</div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div class="circle">2</div>
-            <br/>
-            <br/>
-            <div class="circle">3</div>
-            <br/>
-            <div class="circle">4</div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div class="circle">5</div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div class="circle">6</div>
-        </div>
+    </div>
+    <div class="columns sparledning-space-small">
+        <div class="column col-mx-auto"><img id="linje-img" class="img-responsive" src=""></img></div>
     </div>
     <script src="dynamic-index.js"></script>
 </body>

@@ -1,19 +1,21 @@
 {
-    "linjesrc": "assets/wall-linjeblock.png",
-    "title": "Linjeblock-Relays",
+    "linjesrc": "assets/driftplats_a.png",
+    "title": "Linjeblock Reläer",
     "table-body": [
-        {"name": "Iv", "desc": "Spårledningsupptag"},
-        {"name": "Sv", "desc": "Spårledningsupptag"},
-        {"name": "IIv", "desc": "Spårledningsupptag"},
-        {"name": "RVv", "desc": "Manöverrelä för varningssignalering, repeteringsrelä för <u>Vv</u>"},
-        {"name": "Vv", "desc": "Varningssignalering väg, startar signalering"},
-        {"name": "Akv", "desc": "Avkopplingsrelä för vägskyddsanläggning"},
-        {"name": "TRAkvB", "desc": "Tid Relä för kontroll om <u>Akv</u> är draget"},
-        {"name": "TRVv", "desc": "Tid Relä för återställning av <u>Vv</u> och varningssignalering vid en belägning av Iv eller IIv"},
-        {"name": "FdIv", "desc": "Färdriktningsrelä som styrs av Iv, för passageriktning Iv-Sv-<u>IIv</u>"},
-        {"name": "FdSv", "desc": "Färdriktningsrelä som styrs av Sv, används för att avgöra passagekontrollen"},
-        {"name": "FdIIv", "desc": "Färdriktningsrelä som styrs av IIv, för passageriktning IIv-Sv-<u>Iv</u>"},
-        {"name": "Vsv", "desc": "Kontrollrelä för aktiverad varningssignalering i Signaler mot banan"}
+        {"name": "Lm", "desc": "Linjemanöverrelä"},
+        {"name": "V", "desc": "Vändningrelä"},
+        {"name": "Sp", "desc": "Spärrelä, används vid A-skydd så linjen blir spärrad"},
+        {"name": "Sf", "desc": "Spärr- och Frigivningsrelä"},
+        {"name": "Ri", "desc": "Riktningsrelä"},
+        {"name": "L+", "desc": "Linjerelä, fungerar som ett signalrelä, ger Kör vänta stopp"},
+        {"name": "L-", "desc": "Linjerelä, fungerar som ett signalrelä, ger Kör vänta kör"},
+        {"name": "Li", "desc": "Linjerelä, för utfartsblocksignalen"},
+        {"name": "St", "desc": "Stickrelä, används vid passage of en blocksignal"},
+        {"name": "Rm", "desc": "Riktningsminne, Ser till att växelström för vändning inte matas ut för tidigt"},
+        {"name": "Mk", "desc": "Mörkläggnignsrelä"},
+        {"name": "F", "desc": "Frigivningsrelä"},
+        {"name": "M", "desc": "Relä på linjeplats, Manöverrelä för växeltungslås"},
+        {"name": "Rk", "desc": "Relä på linjeplats, Rälskontaktrelä drar då tåget passerar rälskontakten"}
     ],
-    "normalt-dragna": ["Iv", "Sv", "IIv", "RVv", "Vv"]
+    "normalt-dragna": ["Lm", "Sp", "Sf", "Li", "Mk", "F"]
 }

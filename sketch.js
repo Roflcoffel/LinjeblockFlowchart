@@ -4,7 +4,7 @@ let fcGap = 80
 function preload() {}
 
 function setup() {
-    createCanvas(390, 1700)
+    createCanvas(550, 1100)
     //background(255)
 
     textFont('Roboto');
@@ -12,7 +12,6 @@ function setup() {
     
     let lb = new LinjeVändning()
     lb.Draw()
-    
     strokeWeight(2);
     for (const name in lb.sections) {
         DrawRelayConnections(lb.sections[name])
@@ -35,9 +34,6 @@ function DrawRelayConnections(section) {
         const hor = structure["h"][i];
         all_hor.push(section.filter((h) => {return h.row == hor}))
     }
-
-    console.log(all_vert)
-    console.log(all_hor)
 
     //Draw all vertical
     //Made a special case for N1 which is connected
