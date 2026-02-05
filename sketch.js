@@ -1,21 +1,49 @@
-let font_size = 38
-let fcGap = 80
 
 function preload() {}
 
 function setup() {
-    createCanvas(550, 1100)
-    //background(255)
-
+    createCanvas(w, h)
     textFont('Roboto');
     textSize(font_size);
-    
-    let lb = new LinjeVändning()
+    DrawLinje()
+}
+
+// I only need to draw once!
+// Call this function to update the mode
+function DrawLinje() {
+    background(255)
+    cur_linje = GetActiveMode()
+    let lb
+    console.log(cur_linje)
+    if(cur_linje == "Vändning") {
+        lb = new LinjeVändning()
+    }
+    else if(cur_linje == "Körning") {
+        lb = new LinjeKörning()
+        h = 3000
+        resizeCanvas(w,h)
+    }
+    else {
+        console.log("Active mode not found!")
+        return
+    }
+
     lb.Draw()
     strokeWeight(2);
     for (const name in lb.sections) {
         DrawRelayConnections(lb.sections[name])
     }
+}
+
+function GetActiveMode() {
+    let complexs = document.getElementsByClassName("complex")
+    let active
+    complexs.forEach(element => {
+        if(element.classList.contains("active")) {
+            active = element
+        }
+    });
+    return active.attributes["data-linje"].value
 }
 
 function draw() {}

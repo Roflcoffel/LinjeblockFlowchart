@@ -4,7 +4,7 @@ class fcTxt {
         this.visual = visual
         this.offset = offset
         this.row = row
-        this.x = width/2+offset,
+        this.x = w/2+offset,
         this.y = fcGap*row,
         this.isPowered = isPowered
     }

@@ -5,9 +5,11 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="lib/p5.min.js"></script>
+    <script src="js/globals.js"></script>
     <script src="js/fcTxt.js"></script>
     <script src="js/fcTitle.js"></script>
     <script src="js/LinjeVändning.js"></script>
+    <script src="js/LinjeKörning.js"></script>
     <script src="sketch.js"></script>
 </head>
 <body class="container">
@@ -15,11 +17,11 @@
         <div class="column col-mx-auto"></div>
         <div class="column col-mx-auto">
             <ul class="tab tab-block">
-                <li class="tab-item active">
-                    <a href="#" class="complex active">Linje Vändning</a>
+                <li class="tab-item">
+                    <a href="#" data-linje="Vändning" class="complex active" onClick="toggleActive(this)">Linje Vändning</a>
                 </li>
                 <li class="tab-item">
-                    <a href="#" class="complex">Linje Körning</a>
+                    <a href="#" data-linje="Körning" class="complex" onClick="toggleActive(this)">Linje Körning</a>
                 </li>
             </ul>
             <br />

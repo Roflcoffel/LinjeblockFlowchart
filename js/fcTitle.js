@@ -4,7 +4,7 @@ class fcTitle {
         this.txt = txt
         this.offset = offset
         this.row = row
-        this.x = width/2+offset,
+        this.x = w/2+offset,
         this.y = fcGap*row
     }
 

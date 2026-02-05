@@ -44,3 +44,12 @@ async function Load(complex) {
 }
 
 Load("linjeblock-relays.json")
+
+function toggleActive(elem) {
+    let complexes = document.getElementsByClassName("complex")
+    complexes.forEach(element => {
+        element.classList.remove("active")
+    });
+    elem.classList.add("active")
+    DrawLinje()
+}
