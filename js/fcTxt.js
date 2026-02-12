@@ -1,5 +1,6 @@
 //Flowchart Text Object
 class fcTxt {
+    //Instead of an offset try changing it to a column and see if that will work better.
     constructor(visual, offset, row, isPowered) {
         this.visual = visual
         this.offset = offset
