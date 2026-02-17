@@ -8,4 +8,4 @@ let fcGap = 80
 
 // Canvas Size
 let h = 1800
-let w = 550
+let w = 700

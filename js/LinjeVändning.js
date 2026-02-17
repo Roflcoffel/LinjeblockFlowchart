@@ -7,50 +7,53 @@ class LinjeVändning {
     constructor() {
         this.sections = {}
         this.title = {
-            "DA": new fcTitle("Driftplats A", 1, 50),
-            "DB": new fcTitle("Driftplats B", 9, 50),
-            "BlockAB": new fcTitle("Blockdel B->A", 5, 50),
-            "BlockBA": new fcTitle("Blockdel A->B", 13, 50),
-            "DALIK": new fcTitle("Driftplats A Likström in", 16, 50)
+            "DA": new fcTitle("Driftplats A", 1, 0),
+            "DB": new fcTitle("Driftplats B", 10, 0),
+            "BlockAB": new fcTitle("Blockdel B->A", 6, 0),
+            "BlockBA": new fcTitle("Blockdel A->B", 15, 0),
+            "DALIK": new fcTitle("Driftplats A Likström in", 19, 0)
         }
 
         this.sections["DA"] = [
-            {"v": [50], "h": [2, 4]}, 
-            new fcTxt("V L1", -100, 2, DRAR), 
-            new fcTxt("Lm L1", 50, 2, FALLER), 
-            new fcTxt("Ri L1 B", 50, 3, DRAR),
-            new fcTxt("V L1", -100, 4, FALLER),
-            new fcTxt("= in", 50, 4, FALLER),
-            new fcTxt("~ till DpB", 200, 4, FALLER)
+            {"v": [0], "h": [2, 4]},  
+            new fcTxt("Lm L1", 0, 2, FALLER), 
+            new fcTxt("Ri L1 B", 0, 3, DRAR),
+            new fcTxt("Ut", 0, 4, DRAR),
+            new fcTxt("V L1", 100, 4, FALLER),
+            new fcTxt("Linje ej fri", 0, 5, FALLER)
         ]
 
         this.sections["BlockAB"] = [
-            {"v": [50], "h": []},
-            new fcTxt("Ingen =", 50, 6, FALLER),
-            new fcTxt("L+L4", 50, 7, FALLER),
-            new fcTxt("Linjen rasar till stopp", 50, 8, FALLER),
+            {"v": [0], "h": []},
+            new fcTxt("L+L4", 0, 7, FALLER),
+            new fcTxt("Ljg L4", 0, 8, FALLER),
+            new fcTxt("Ljr L4", 0, 9, DRAR),
         ]
 
         this.sections["DB"] = [
-            {"v": [50], "h": [12]},
-            new fcTxt("Li L2", 50, 10, FALLER),
-            new fcTxt("V L2", 50, 11, DRAR),
-            new fcTxt("= till Bl", -100, 12, FALLER),
-            new fcTxt("Ri L2 F", 50, 12, DRAR),
+            {"v": [0], "h": [12]},
+            new fcTxt("Li L2", 0, 11, FALLER),
+            new fcTxt("Linje ej fri", -150, 12, FALLER),
+            new fcTxt("V L2", 0, 12, DRAR),
+            new fcTxt("Ri L2 F", 0, 13, DRAR),
+            new fcTxt("In", 0, 14, DRAR)
         ]
 
         this.sections["BlockBA"] = [
-            {"v": [50], "h": [14]},
-            new fcTxt("= in", -100, 14, FALLER),
-            new fcTxt("L+L3", 50, 14, DRAR),
-            new fcTxt("= till DpA", 50, 15, FALLER)
+            {"v": [0], "h": []},
+            new fcTxt("L+L3", 0, 16, DRAR),
+            new fcTxt("Ljg L3", 0, 17, DRAR),
+            new fcTxt("Ljr L3", 0, 18, FALLER)
         ]
 
         this.sections["DALIK"] = [
-            {"v": [50], "h": [18]},
-            new fcTxt("Li L1", 50, 17, DRAR),
-            new fcTxt("Ljg L1", 50, 18, DRAR),
-            new fcTxt("Ljr L1", 200, 18, FALLER)
+            {"v": [0,150], "h": [21]},
+            new fcTxt("Li L1", 0, 20, DRAR),
+            new fcTxt("V L1 (Dpl B)", -200, 21, FALLER),
+            new fcTxt("Linje fri", 0, 21, FALLER),
+            new fcTxt("Ljg L1", 150, 21, DRAR),
+            new fcTxt("Ljf L1", 300, 21, DRAR),
+            new fcTxt("Ljr L1", 150, 22, FALLER)
         ]
     }
 
